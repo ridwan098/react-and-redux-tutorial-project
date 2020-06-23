@@ -1,5 +1,4 @@
 export default function () {
-    console.log("uses are being stored")
     return [
         {
             id: 1,
