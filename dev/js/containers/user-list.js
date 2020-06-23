@@ -5,12 +5,12 @@ import { selectUser } from '../actions/index';
 
 class UserList extends Component {
     createListItems() {
-        return this.props.users.map(items => (
+        return this.props.users.map(user => (
             <li
-                key={items.id}
-                onClick={() => this.props.selectUser(items)}
+                key={user.id}
+                onClick={() => this.props.selectUser(user)}
             >
-                {items.first} {items.first}
+                {user.first} {user.first}
             </li>
         ))
     }
